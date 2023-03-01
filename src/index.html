@@ -18,11 +18,14 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Josh Rudesill | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <meta
+      name="keywords"
+      content="[joshrudesill], [josh rudesill], javascript, react, nextjs, mongodb"
+    />
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="[Josh Rudesill] | Web Developer" />
 
     <link
       rel="stylesheet"
@@ -35,9 +38,20 @@
     ></script>
 
     <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-4YLJCT2FR3"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
+    gtag("config", "G-4YLJCT2FR3");
+  </script>
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
@@ -46,9 +60,9 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Josh Rudesill</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a React Web Developer.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -70,8 +84,8 @@
                 alt="Profile Image"
                 class="img-fluid rounded shadow-lg"
                 height="auto"
-                width="300px"
-                src="assets/profile.jpg"
+                width="400px"
+                src="assets/profilepic.jpg"
                 alt="Profile Image"
               />
             </div>
@@ -79,18 +93,35 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                I'm an aspiring software developer from Hudson, WI currently
+                looking for work. For the past few months, I have been building
+                projects and learning under the guidance of my mentor, a staff
+                software engineer with over 10 years of experience in the web
+                development world. My goal is to find my first developer job but
+                meanwhile I will continue building projects and expanding my
+                knowledge. I left my last job as a CAD operator to pursue this
+                goal full time. At my previous job I was building workflow
+                automation / optimization software that integrated directly into
+                our CAD program Rhino3D along with providing technical drawings
+                and production files. Since I've left, I've been able to
+                siginificantly improve my skills by building full stack
+                applications on my own with complete architectural freedom.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Outside of programming I am an avid gamer mostly playing League
+                of Legends and Satisfactory these days. Along with enjoying
+                going to the gym and learning about math, I am a gastronomy
+                nerd. I love learning about wine and cooking anything that seems
+                interesting. I had the pleasure of working as a cook in a very
+                creative restaurant when I was younger and that sparked an
+                interest in all things culinary.
               </p>
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="assets/resume-current.pdf"
                 >
                   View Resume
                 </a>
@@ -112,19 +143,25 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Chess2</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    Chess2 is a web application for playing live chess with
+                    anyone around the world or for playing against a chess
+                    engine (Stockfish 11). I built it using React / Next.js,
+                    Express, MongoDB, socket.io, and Tailwind. It has
+                    matchmaking for finding someone to play with (if anyone is
+                    online). If there is no one willing to play (likely since
+                    its a portfolio project), you can play against Stockfish 11,
+                    a chess engine. See the source code for more detailed
+                    technical info!
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://chess2.vercel.app"
                 >
                   See Live
                 </a>
@@ -132,7 +169,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/joshrudesill/chess2"
                 >
                   Source Code
                 </a>
@@ -151,7 +188,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/chess2.jpg"
                     />
                   </div>
                 </a>
@@ -164,19 +201,23 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Jewel Scheduler</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    A web application for creating and managing appointments for
+                    a small business. It as features such as time validation to
+                    avoid conflicting appointments, availability windows which
+                    will be filled with appointments of your chosen type, and an
+                    account authentication system. It was built with React /
+                    Nextjs, MySQL (planetscale serverless), and Bulma.io for
+                    style.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://jewel.jrudesill.dev"
                 >
                   See Live
                 </a>
@@ -184,7 +225,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/joshrudesill/Jewel"
                 >
                   Source Code
                 </a>
@@ -203,7 +244,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/jewel.jpg"
                     />
                   </div>
                 </a>
@@ -216,11 +257,12 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">useChess</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    (Under Development) An open-source React hook which will be
+                    published to npm. It is used for chess calculation within
+                    React. It will be built with Typescript.
                   </p>
                 </div>
                 <a
@@ -254,7 +296,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/ud.png"
                     />
                   </div>
                 </a>
@@ -272,13 +314,16 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">
+            Feel free to email me at joshrudesill@gmail.com. You can also call
+            me at +1 651 491 5052 or text me on WhatsApp at the same number
+          </p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="https://blog.jrudesill.dev"
+            >Check out my Blog</a
           >
         </div>
       </div>
@@ -292,13 +337,18 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/josh-rudesill/"
+            target="_blank"
+          >
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://github.com/joshrudesill"
+            target="_blank"
+          >
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -306,36 +356,9 @@
         <hr />
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
+        <p class="footer__text"></p>
 
         <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
       </div>
     </footer>
     <!-- /END Footer Section -->
